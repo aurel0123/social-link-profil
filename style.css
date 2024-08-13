@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@200;300;400;600;700&display=swap');
+*{
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --green-color: hsl(75, 94%, 57%) ;
+    --white-color : hsl(0, 0%, 100%) ; 
+}
+body{
+    background-color: #111;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    border-radius: 10px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.062);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(243, 241, 241, 0.11);
+    display: flex;
+    flex-direction: column ;
+}
+.card__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.card__header .image{
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.card__header .text {
+    text-align: center;
+}
+.card__header .text h4 {
+    font-size: 18px;
+    margin-bottom: 10px ;
+    font-weight: 700;
+}
+.text p{
+    font-size: 11px;
+    color: var(--green-color);
+    text-shadow: 0 0 5px var(--green-color);
+    font-weight: 300;
+}
+.card__bordy{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.card__bordy p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card__bordy button{
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(243, 241, 241, 0.11);
+    padding: 10px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(243, 241, 241, 0.11);
+    cursor: pointer;
+    font-size: 14px ;
+}
+.card__bordy button:hover{
+    transition: 0.4s ease-in;
+    color: var(--green-color);
+    background-color: var(--white-color);
+    font-weight: 700;
+}
+@media screen and (max-width : 375px)  {
+    .card{
+        width: 250px;
+    }
+}
